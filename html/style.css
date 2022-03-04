@@ -1,0 +1,41 @@
+body {
+    background-image: radial-gradient(circle, #ed2580, #f365a2, #f692c1, #f8badb, #fae0f0);
+}
+.pudim {
+    float: center;
+    width: 200px;
+	height: 250px;
+    margin-right: 50%;
+    margin-left: 47%;
+    margin-top: 1em;
+}
+.balao{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    float: center;
+    position: relative;
+    /* texto: */
+    text-indent: 2em;
+    font-family: sf ui display;
+    text-align: center;
+    display: flexbox;
+    margin-top: 1em;
+    margin-right: 50%;
+    margin-left: 40%;
+    font-size: large;
+    font-weight: bold;
+    color: #f22c94;
+}
+.balao:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(255, 255, 255);
+    bottom: -20px;
+    display: flexbox;
+}
