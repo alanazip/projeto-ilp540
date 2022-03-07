@@ -20,13 +20,11 @@ body {
     float: center;
     width: 170px;
 	height: 210px;
-    margin-right: 53%;
-    margin-left: 47%;
     margin-top: 1em;
 }
 .balao{
     background: rgb(255, 255, 255);
-    border-radius: 40px;
+    border-radius: 20px;
     width: 300px;
     height: 100px;
     float: center;
@@ -36,8 +34,6 @@ body {
     font-family: Trebuchet MS, sans-serif;
     text-align: center;
     margin-top: 1em;
-    margin-right: 60%;
-    margin-left: 43%;
     font-size: 22px;
     font-weight: bold;
     color: #f22c94;
@@ -53,30 +49,81 @@ body {
     bottom: -20px;
     display: flexbox;
 }
-.login, .senha {
-	width: 280px;
+#senha {
+	width: 295px;
+    position: absolute;
+    text-align: left;
 	height: 32px;
-	padding: 4px 8px 4px 8px;
 	background: #ffffff;
 	color: #c0c0c0;
 	border-color: #f6a2bf;
-	border-width: 1px;
+	border-width: 2px;
 	border-style: solid;
-	border-radius: 3px 3px 3px 3px;
+    border-radius: 4px 4px 4px 4px;
 	font-family: "Trebuchet MS, sans-serif";
-	font-weight: 400;
-	font-size: 14px;
-	text-align: left;
-    
+	font-size: 16px;
+    text-indent: 5px;
+    position: absolute;
+    display: inline-block;
+}
+#usuario {
+	width: 300px;
+    position: absolute;
+    text-align: left;
+	height: 32px;
+	background: #ffffff;
+	color: #f738a1;
+	border-color: #f6a2bf;
+	border-width: 2px;
+	border-style: solid;
+    border-radius: 4px 4px 4px 4px;
+	font-family: "Trebuchet MS, sans-serif";
+	font-size: 16px;
+    text-indent: 5px;
+    position: absolute;
+    display: inline-block;
+}
+form {
+    display: inline-block;
+    position: relative;
 }
 .label {
-	width: 142px;
-	height: 40px;
+    width: 350px;
+	height: 30px;
 	color: #ffffff;
 	font-family: "Trebuchet MS, sans-serif";
-	font-weight: 400;
 	font-size: 20px;
 	text-align: left;
-    margin-left: 45%;
-    margin-right: 55%;
+}
+footer {
+    background-color: deeppink;
+    color: white;
+    font-size: 15px;
+    font-family: "Trebuchet MS, sans-serif";
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+button {
+	width: 113px;
+	height: 33px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Trebuchet MS, sans-serif";
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+    
+}
+#entrar {
+    text-decoration: none;	
+    color: #ffffff;
 }
