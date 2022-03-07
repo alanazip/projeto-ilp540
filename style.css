@@ -18,15 +18,15 @@ body {
 /* display grid testar se n der certo remover*/
 .pudim {
     float: center;
-    width: 200px;
-	height: 250px;
+    width: 170px;
+	height: 210px;
     margin-right: 53%;
     margin-left: 47%;
     margin-top: 1em;
 }
 .balao{
     background: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 40px;
     width: 300px;
     height: 100px;
     float: center;
@@ -36,8 +36,8 @@ body {
     font-family: Trebuchet MS, sans-serif;
     text-align: center;
     margin-top: 1em;
-    margin-right: 50%;
-    margin-left: 40%;
+    margin-right: 60%;
+    margin-left: 43%;
     font-size: 22px;
     font-weight: bold;
     color: #f22c94;
@@ -52,4 +52,31 @@ body {
     border-top: 20px solid rgb(255, 255, 255);
     bottom: -20px;
     display: flexbox;
+}
+.login, .senha {
+	width: 280px;
+	height: 32px;
+	padding: 4px 8px 4px 8px;
+	background: #ffffff;
+	color: #c0c0c0;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px 3px 3px 3px;
+	font-family: "Trebuchet MS, sans-serif";
+	font-weight: 400;
+	font-size: 14px;
+	text-align: left;
+    
+}
+.label {
+	width: 142px;
+	height: 40px;
+	color: #ffffff;
+	font-family: "Trebuchet MS, sans-serif";
+	font-weight: 400;
+	font-size: 20px;
+	text-align: left;
+    margin-left: 45%;
+    margin-right: 55%;
 }
