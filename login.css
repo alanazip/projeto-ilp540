@@ -13,7 +13,9 @@ body {
     background-attachment : fixed ; 
     background-size : cover ;
     flex-wrap: wrap;
-    display: grid; 
+    display: grid;
+    margin-top: 40px;
+    
 }
 /* display grid testar se n der certo remover*/
 .pudim {
@@ -55,7 +57,7 @@ body {
     text-align: left;
 	height: 32px;
 	background: #ffffff;
-	color: #c0c0c0;
+	color: #f738a1;
 	border-color: #f6a2bf;
 	border-width: 2px;
 	border-style: solid;
@@ -94,6 +96,7 @@ form {
 	font-family: "Trebuchet MS, sans-serif";
 	font-size: 20px;
 	text-align: left;
+    
 }
 footer {
     background-color: deeppink;
@@ -117,13 +120,25 @@ button {
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 10px 10px 10px 10px;
-	font-family: "Trebuchet MS, sans-serif";
+    font-family: Trebuchet MS, sans-serif;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 15px;
 	text-align: center;
+    
     
 }
 #entrar {
     text-decoration: none;	
     color: #ffffff;
+}
+.cadastro {
+    text-decoration: none;
+    font-family: "Trebuchet MS, sans-serif";
+	font-size: 15px;
+    text-shadow: #f692c1 0.0em 0.0em 0.5em;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #f22c94;
 }
