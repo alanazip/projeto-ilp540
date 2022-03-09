@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">        
     <head>
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login.css">
 
     </head>
     <body>
@@ -15,7 +15,8 @@
         <br>
             <label class="label" for="text">login:<input type="text" name="usuario" id="usuario" class="login"></label><br><br>
             <label class="label" for="password">senha:<input type="password" name="senha" id="senha" class="senha"></label><br><br>
-        <button><a href="home.html" id="entrar">entrar</a></button>
+        <button><a href="home.html" id="entrar">entrar</a></button><br>
+        <a href="cadastro.html" class="cadastro">cadastre-se na rede moranguinho</a>
         </div>
         <footer>Copyright © 2022. Todos os direitos reservados.</footer>
     </body>
