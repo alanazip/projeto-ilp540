@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+}
+body {
+    background-image: radial-gradient(circle at center, #ed2580, #f365a2, #f692c1, #f8badb, #fae0f0);
+    background-size: 120em 70em;
+    background-position : center center ;
+    background-repeat : no - repeat ; 
+    background-attachment : fixed ; 
+    background-size : cover ;
+    flex-wrap: wrap;
+    display: grid;
+    margin-top: 40px;
+    
+}
+/* display grid testar se n der certo remover*/
+.pudim {
+    float: center;
+    width: 120px;
+	height: 150px;
+    margin-top: 1em;
+}
+.balao{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 250px;
+    height: 70px;
+    float: center;
+    position: relative;
+    /* texto: */
+    text-indent: 2em;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f22c94;
+}
+.balao:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(255, 255, 255);
+    bottom: -20px;
+    display: flexbox;
+}
+#senha {
+	width: 295px;
+    position: absolute;
+    text-align: left;
+	height: 32px;
+	background: #ffffff;
+	color: #f738a1;
+	border-color: #f6a2bf;
+	border-width: 2px;
+	border-style: solid;
+    border-radius: 6px 6px 6px 6px;
+	font-family: "Trebuchet MS, sans-serif";
+	font-size: 16px;
+    text-indent: 5px;
+    position: absolute;
+    display: inline-block;
+}
+/* nome era o usuario */
+#nome {
+	width: 300px;
+    position: absolute;
+    text-align: left;
+	height: 32px;
+	background: #ffffff;
+	color: #f738a1;
+	border-color: #f6a2bf;
+	border-width: 2px;
+	border-style: solid;
+    border-radius: 6px 6px 6px 6px;
+	font-family: "Trebuchet MS, sans-serif";
+	font-size: 16px;
+    text-indent: 5px;
+    position: absolute;
+    display: inline-block;
+}
+form {
+    display: inline-block;
+    position: relative;
+}
+.label {
+    width: 350px;
+	height: 30px;
+	color: #ffffff;
+	font-family: "Trebuchet MS, sans-serif";
+	font-size: 15px;
+	text-align: left;
+    
+}
+footer {
+    background-color: deeppink;
+    color: white;
+    font-size: 15px;
+    font-family: "Trebuchet MS, sans-serif";
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+button {
+	width: 113px;
+	height: 33px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Trebuchet MS, sans-serif";
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+    
+}
+#cadastrar {
+    text-decoration: none;	
+    color: #ffffff;
+}
+.entre {
+    text-decoration: none;
+    text-shadow: #f692c1 0.0em 0.0em 0.5em;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f22c94;
+}
