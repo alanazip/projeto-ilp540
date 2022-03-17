@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="principal">
+            <div>
                 <div>
                     <div class="centralizado">
                         <p class="balao">faça login ou cadastre-se para entrar</p>
