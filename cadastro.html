@@ -9,31 +9,56 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div>
-                <div>
-                    <div class="centralizado">
-                        <p class="cadastre_se" id="cadastre_se">cadastre-se</p>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label class="label" for="cadastro">cadastre-se:</label>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <label class="label" for="email">login:</label>
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="email" name="email" id="usuario" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
-                    </div>
-                    <div class="col-sm-12">
-                        <label class="label" for="senha">senha:</label>
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="password" name="senha" id="senha" class="senha">
-                    </div>
-                    <div class="centralizado col-12">
-                        <button><a href="home.html" id="entrar">cadastre-se</a></button>
-                    </div>
-                    <div class="col-12">
-                        <a href="index.php" class="cadastro">fazer login na rede moranguinho</a>
-                    </div>
+                <div class="col-sm-12">
+                    <label class="label" for="nome">nome:</label>
+                </div>
+                <div class="col-sm-12">
+                    <input type="name" name="nome" id="usuario" class="form-control" id="exampleDropdownFormEmail1" placeholder="seu nome aqui">
+                </div>
+                <div class="col-sm-12">
+                    <label class="label" for="email">email:</label>
+                </div>
+                <div class="col-sm-12">
+                    <input type="email" name="email" id="usuario" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
+                </div>
+                <div class="col-sm-12">
+                    <label class="label" for="nome">gênero:</label>
+                </div>
+                <div class="col-sm-12">
+                    <select class="form-select" aria-label="Default select example" id="usuario">
+                        <option selected>gênero</option>
+                        <option value="1">feminino</option>
+                        <option value="2">masculino</option>
+                        <option value="3">outro</option>
+                      </select>
+                </div>
+                <div class="col-sm-12">
+                    <label class="label" for="date">data de nascimento:</label>
+                </div>
+                <div class="col-sm-12">
+                    <input class="usuario" type="date" id="usuario" />
+                </div>
+                <div class="col-sm-12">
+                    <label class="label" for="senha">senha:</label>
+                </div>
+                <div class="col-sm-12">
+                    <input type="password" name="senha" id="senha" class="senha" placeholder="sua senha aqui">
+                </div>
+                <div class="col-sm-12">
+                    <label class="label" for="senha">confirmar senha:</label>
+                </div>
+                <div class="col-sm-12">
+                    <input type="password" name="senha" id="senha" class="senha" placeholder="confirme a senha">
+                </div>
+                <div class="centralizado col-12">
+                    <button border="2" class="button"><a href="home.html" id="entrar">cadastre-se</a></button>
+                </div>
+                <div class="col-12">
+                    <a href="index.php" class="cadastro">fazer login na rede moranguinho</a>
                 </div>
             </div>
             <footer>Copyright © 2022. Todos os direitos reservados.</footer>
