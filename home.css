@@ -13,8 +13,7 @@ body {
     background-attachment : fixed ; 
     background-size : cover ;
     flex-wrap: wrap;
-    display: grid;
-    
+    width: 100%;
 }
 /* display grid testar se n der certo remover*/
 .pudim {
@@ -69,7 +68,7 @@ body {
 	font-family: "Trebuchet MS";
 	font-size: 20px;
 	text-align: left;
-    
+    float: right;
 }
 footer {
     background-color: #ed2580;
@@ -125,9 +124,17 @@ button {
     margin-left: 0px;
 }
 .container-fluid {
-    background-image: radial-gradient(circle, #ed2580, #f04b92, #f365a2, #f57db2, #f692c1);
-    border-radius: 20px;
-    width: 30em;
+    background-color: rgba(254, 255, 182, 0.966);
+    border-radius: 5px;
+    width: auto;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color: hotpink;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: large;
 }
 a {
     color: #e9d8df;
@@ -152,4 +159,27 @@ a:link {
  a:active {
      color: #e9d8df;
  }
- 
+ #moranguinho_no_moranguinho {
+     width: 300px;
+     margin-left: auto;
+    margin-right: auto;
+ }
+ #logo {
+     width: 400px;
+     margin-left: auto;
+    margin-right: auto;
+ }
+ .centralizado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
+ }
+ .os_dois {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+ }
