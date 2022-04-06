@@ -5,62 +5,93 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="cadastro.css">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <label class="label" for="cadastro">cadastre-se:</label>
+        <div class="centralizado col-12">
+            <button border="2" class="button"><a href="home.html" id="entrar">home</a></button>
+        </div>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label class="label" for="cadastro">cadastre-se:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="label" for="validationServer01">nome:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="seu nome aqui" required>
+                            <div class="valid-feedback">
+                                Nome Ok!
+                              </div>
+                                <div class="invalid-feedback">
+                                Por favor, escolha um nome de usuário.
+                                </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="label" for="validationServer01">email:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="email" name="email" class="form-control" id="validationCustom01" placeholder="email@exemplo.com" required>
+                            <div class="valid-feedback">
+                                Email Ok!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, escolha um email.
+                                </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="label" for="nome">gênero:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <select class="form-select" aria-label="Default select example" id="usuario">
+                                <option selected>gênero</option>
+                                <option value="1">feminino</option>
+                                <option value="2">masculino</option>
+                                <option value="3">outro</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="label" for="date">data de nascimento:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input class="usuario" type="date" id="usuario" />
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="label" for="validationCustom03">senha:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="password" name="senha" id="validationCustom03" class="form-control" placeholder="sua senha aqui" required>
+                            <div class="valid-feedback">
+                                Senha válida!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, digite uma senha.
+                                </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="label" for="validationCustom03">confirmar senha:</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="password" name="senha" id="validationCustom03" class="form-control" placeholder="confirme a senha" required>
+                            <div class="valid-feedback">
+                                Senha válida!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, confirme sua senha.
+                                </div>
+                        </div>
+                        <div class="centralizado col-12">
+                            <button class="btn btn-primary" type="submit" border="2">cadastre-se</button>
+                        </div>
+                        <div class="col-12">
+                            <a href="login.html" class="cadastro">fazer login na rede moranguinho</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12">
-                    <label class="label" for="nome">nome:</label>
-                </div>
-                <div class="col-sm-12">
-                    <input type="name" name="nome" id="usuario" class="form-control" id="exampleDropdownFormEmail1" placeholder="seu nome aqui">
-                </div>
-                <div class="col-sm-12">
-                    <label class="label" for="email">email:</label>
-                </div>
-                <div class="col-sm-12">
-                    <input type="email" name="email" id="usuario" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
-                </div>
-                <div class="col-sm-12">
-                    <label class="label" for="nome">gênero:</label>
-                </div>
-                <div class="col-sm-12">
-                    <select class="form-select" aria-label="Default select example" id="usuario">
-                        <option selected>gênero</option>
-                        <option value="1">feminino</option>
-                        <option value="2">masculino</option>
-                        <option value="3">outro</option>
-                      </select>
-                </div>
-                <div class="col-sm-12">
-                    <label class="label" for="date">data de nascimento:</label>
-                </div>
-                <div class="col-sm-12">
-                    <input class="usuario" type="date" id="usuario" />
-                </div>
-                <div class="col-sm-12">
-                    <label class="label" for="senha">senha:</label>
-                </div>
-                <div class="col-sm-12">
-                    <input type="password" name="senha" id="senha" class="senha" placeholder="sua senha aqui">
-                </div>
-                <div class="col-sm-12">
-                    <label class="label" for="senha">confirmar senha:</label>
-                </div>
-                <div class="col-sm-12">
-                    <input type="password" name="senha" id="senha" class="senha" placeholder="confirme a senha">
-                </div>
-                <div class="centralizado col-12">
-                    <button border="2" class="button"><a href="home.html" id="entrar">cadastre-se</a></button>
-                </div>
-                <div class="col-12">
-                    <a href="index.php" class="cadastro">fazer login na rede moranguinho</a>
-                </div>
-            </div>
+            </form>
             <footer>Copyright © 2022. Todos os direitos reservados.</footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -69,6 +100,8 @@
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+        <script src="cadastro.js"></script>
+    
+    
     </body>
-
 </html>
