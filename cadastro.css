@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0px;
+    padding: 5px 5px 5px 5px;
     box-sizing: border-box;
     width: 100%;
     display: block;
@@ -16,7 +16,37 @@ body {
     display: grid;
     
 }
-
+/* display grid testar se n der certo remover*/
+.pudim {
+    float: center;
+    width: 170px;
+	height: 210px;
+}
+.balao{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 300px;
+    height: 80px;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: #f22c94;
+    align-items: center;
+    padding: 10px;
+}
+.balao:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(255, 255, 255);
+    bottom: -20px;
+    display: flexbox;
+}
 #usuario, #senha {
     width: 400px;
     text-align: left;
@@ -32,17 +62,14 @@ body {
 
   
 }
-label {
-    display: inline-block;
-    margin-bottom: 0px;
-}
+
 .label {
+  
 	color: #ffffff;
-    font-family: "Trebuchet MS";
-    font-size: 15px;
-    text-align: left;
-    display: inline-block;
-    margin-bottom: 0px;
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-align: left;
+    
 }
 footer {
     background-color: #ed2580;
@@ -56,17 +83,22 @@ footer {
     bottom: 0;
     left: 0;
 }
-.button {
-	width: 150px;
+button {
+	width: 113px;
 	height: 39px;
 	padding: 0px 10px 0px 10px;
 	background: #e93578;
 	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
 	border-style: solid;
 	border-radius: 10px 10px 10px 10px;
     font-family: Trebuchet MS;
-	font-size: 17px;
+	font-weight: bold;
+	font-size: 15px;
 	text-align: center;
+    
+    
 }
 #entrar {
     text-decoration: none;	
@@ -79,6 +111,12 @@ footer {
     text-align: center;
     color: #ffffff;
     text-decoration: none;
+}
+.centralizado{
+    display: flex;
+    justify-content: center;
+
+
 }
 .row {
     display: flex;
@@ -114,3 +152,57 @@ a:link {
  a:active {
      color: #e9d8df;
  }
+ .btn {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+    
+}
+.btn-primary {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+    margin-top: 1em;
+}
+.btn-primary:hover {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e61a65;
+	color: #ffffff;
+	border-color: #f7c2d4;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+.valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: aliceblue;
+}
