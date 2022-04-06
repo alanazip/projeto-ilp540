@@ -152,3 +152,56 @@ a:link {
  a:active {
      color: #e9d8df;
  }
+ .btn {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+    
+}
+.btn-primary {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+.btn-primary:hover {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e61a65;
+	color: #ffffff;
+	border-color: #f7c2d4;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+.valid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: aliceblue;
+}
