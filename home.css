@@ -165,7 +165,8 @@ a:link {
     margin-right: auto;
  }
  #logo {
-     width: 400px;
+     width: 100%;
+     max-width: 400px;
      margin-left: auto;
     margin-right: auto;
  }
