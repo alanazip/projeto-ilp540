@@ -47,14 +47,12 @@
                                 <div class="invalid-feedback">
                                     Por favor, digite sua senha.
                                     </div><br>
-                            
                                 <div class="centralizado col-12">
-                                    <div class="botao_entrar"><button class="btn btn-primary" type="submit" border="2">entrar</button></div>
+                                    <button class="btn btn-primary" type="submit" border="2">entrar</button>
                                 </div>
                             <div class="col-12">
                                 <a href="cadastro.html" class="cadastro">cadastre-se na rede moranguinho</a>
                             </div>
-                        
                         </div>
                     </div>
                 </div>
