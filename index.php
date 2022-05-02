@@ -1,3 +1,12 @@
+<?php
+    $login = $senha = $check = "";
+    if(isset($_COOKIE["login"])){
+        $login = $_COOKIE["login"];
+        $check = "checked";
+    }
+    if(isset($_COOKIE["senha"]))
+        $senha = $_COOKIE["senha"];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">        
     <head>
@@ -5,13 +14,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="login_txt.css">
+        <link rel="stylesheet" href="login.css">
     </head>
     <body>
-        <div class="centralizado col-12">
-            <button border="2" class="button"><a href="home.html" id="entrar">home</a></button>
-        </div>
-        <form class="needs-validation" novalidate>
+        <form action="process.php" method="post" class="needs-validation">
             <div class="form-row">
                 <div class="container-fluid">
                     <div>
@@ -28,7 +34,7 @@
                                 <label class="label" for="validationServer01">login:</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="email" name="email" class="form-control" id="validationCustom01" placeholder="seu usuário" required>
+                                <input type="text" name="login" class="form-control" id="login" value="<?= $login ?>" placeholder="insira seu usuário" required>
                                 <div class="valid-feedback">
                                     Usuário Ok!
                                 </div>
@@ -40,7 +46,11 @@
                                 <label class="label" for="validationCustom03">senha:</label>
                             </div>
                             <div class="col-sm-12">
-                                <input type="password" name="senha" id="validationCustom03" class="form-control" placeholder="sua senha aqui" required>
+                                <input type="password" name="senha" id="senha" value="<?= $senha ?>" class="form-control" placeholder="insira sua senha aqui" required>
+                                <label>
+                                    <input type="checkbox" name="salvar" <? $check ?>>
+                                    salvar dados de acesso
+                                </label>
                                 <div class="valid-feedback">
                                     Senha válida!
                                 </div>
@@ -48,7 +58,7 @@
                                     Por favor, digite sua senha.
                                     </div><br>
                                 <div class="centralizado col-12">
-                                    <button class="btn btn-primary" type="submit" border="2">entrar</button>
+                                    <input type="submit" class="btn btn-primary">
                                 </div>
                             <div class="col-12">
                                 <a href="cadastro.html" class="cadastro">cadastre-se na rede moranguinho</a>
