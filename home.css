@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+}
+body {
+    background-image: radial-gradient(circle at center, #ed2580, #f365a2, #f692c1, #f8badb, #fae0f0);
+    background-size: 120em 70em;
+    background-position : center center ;
+    background-repeat : no - repeat ; 
+    background-attachment : fixed ; 
+    background-size : cover ;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* display grid testar se n der certo remover*/
+.pudim {
+    float: center;
+    width: 170px;
+	height: 210px;
+}
+.balao{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 300px;
+    height: 80px;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: #f22c94;
+    align-items: center;
+    padding: 10px;
+}
+.balao:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(255, 255, 255);
+    bottom: -20px;
+    display: flexbox;
+}
+#usuario, #senha {
+    width: 400px;
+    text-align: left;
+	height: 37px;
+	background: #ffffff;
+	color: #9e9e9e;
+	border-color: #f6a2bf;
+	border-width: 2px;
+	border-style: solid;
+    border-radius: 4px 4px 4px 4px;
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+
+  
+}
+
+.label {
+  
+	color: #ffffff;
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-align: left;
+    float: right;
+}
+footer {
+    background-color: #ed2580;
+    color: white;
+    font-size: 15px;
+    font-family: "Trebuchet MS, sans-serif";
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+button {
+	width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+    
+    
+}
+#entrar {
+    text-decoration: none;	
+    color: #ffffff; 
+}
+.cadastro {
+    text-decoration: none;
+	font-size: 19px;
+    font-family: Trebuchet MS;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+.centralizado{
+    display: flex;
+    justify-content: center;
+
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0px;
+}
+.container-fluid {
+    background-color: rgba(254, 255, 182, 0.966);
+    border-radius: 5px;
+    width: auto;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color: hotpink;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: large;
+}
+a {
+    color: #e9d8df;
+    text-decoration: none;
+}
+/* link que ainda não foi visitado */
+a:link {
+    color: #e9d8df;
+ }
+ 
+ /* link que foi visitado */
+ a:visited {
+     color: #e9d8df;
+ }
+ 
+ /* mouse over PRINCIPAL*/
+ a:hover {
+     color: #f04b92;
+ }
+ 
+ /* link selecionado */
+ a:active {
+     color: #e9d8df;
+ }
+ #moranguinho_no_moranguinho {
+     width: 300px;
+     margin-left: auto;
+    margin-right: auto;
+ }
+ #logo {
+     width: 100%;
+     max-width: 400px;
+     margin-left: auto;
+    margin-right: auto;
+ }
+ .centralizado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
+ }
+ .os_dois {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+ }
+ .sair {
+    width: 113px;
+	height: 39px;
+	padding: 0px 10px 0px 10px;
+	background: #e93578;
+	color: #ffffff;
+	border-color: #f6a2bf;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px 10px 10px 10px;
+    font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+    
+ }
